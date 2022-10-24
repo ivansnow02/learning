@@ -25,9 +25,9 @@
  * @date 2022-10-24
  * @copyright Copyright (c) 2022
  */
-#include<iostream>
-#include<string>
-#include<iomanip>
+#include <iostream>
+#include <string>
+#include <iomanip>
 using namespace std;
 
 string name[6];
@@ -36,11 +36,11 @@ int main()
 {
     for (int i = 0; i < 5; i++)
     {
-        cin >> name[i] >> test[0][i] >> test[1][i] >>test[2][i]>>test[3][i];
+        cin >> name[i] >> test[0][i] >> test[1][i] >> test[2][i] >> test[3][i];
         test[4][i] = test[0][i] + test[1][i] + test[2][i] + test[3][i];
         test[5][i] = test[4][i] / 4;
     }
-    cout << setiosflags(ios::left) << setw(10) << "Name" << setw(9) << "TotalScore" << "AverageScore" << endl;
+    cout << "Name TotalScore AverageScore" << endl; //好蠢。。。
     for (int i = 0; i < 5; i++)
     {
         cout << setiosflags(ios::left) << setw(10) << name[i] << setw(9) << test[4][i] << test[5][i] << endl;
@@ -49,7 +49,8 @@ int main()
     int max = 0;
     for (int i = 0; i < 5; i++)
     {
-        if (max < test[5][i]){
+        if (max < test[5][i])
+        {
             max = test[5][i];
             maxName = name[i];
         }
