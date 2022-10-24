@@ -32,8 +32,10 @@ using namespace std;
 
 string name[6];
 int test[10][6];
-int main(){
-    for (int i = 0; i < 5; i++){
+int main()
+{
+    for (int i = 0; i < 5; i++)
+    {
         cin >> name[i] >> test[0][i] >> test[1][i] >>test[2][i]>>test[3][i];
         test[4][i] = test[0][i] + test[1][i] + test[2][i] + test[3][i];
         test[5][i] = test[4][i] / 4;
