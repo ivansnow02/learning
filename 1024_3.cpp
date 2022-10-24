@@ -48,7 +48,7 @@ int main()
         if (i == k)
         {
             cnt++;
-            printf("[%d][%d] = %d is Saddle Point", i , m , a[i][m]);
+            printf("[%d][%d]=%d is Saddle Point", i , m , a[i][m]);
         }
     }
     if (cnt == 0)
