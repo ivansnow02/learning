@@ -18,20 +18,24 @@
 #include <iostream>
 #include <string>
 using namespace std;
-int main(){
+int main()
+{
     string s;
     cin >> s;
     int num[10]{};
     int digit_sum = 0;
-    for (char x : s){
-        if (x<='9'&&x>='0'){
+    for (char x : s)
+    {
+        if (x <= '9' && x >= '0')
+        {
             digit_sum++;
             num[x - '0']++;
         }
     }
     cout << "Number's amount is:" << digit_sum << endl
          << "'0...9' amount is:";
-    for (int i = 0; i <= 9; i++){
+    for (int i = 0; i <= 9; i++)
+    {
         cout << num[i] << ' ';
     }
     return 0;
